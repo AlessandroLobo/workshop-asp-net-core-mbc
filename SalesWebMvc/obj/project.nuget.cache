@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0cdjcChWtekH0wFR4nG1z9Q7wd+6lY80r0hvlfc5ZmLe2H7jrgcRbSJ1Jcw5kwGOaOHX92pd5Ee0XvAnnG3yug==",
+  "dgSpecHash": "6HmEIUMPADv7kY0uyd579qcysLnh5qvHp+LSgSjQ+Uub2AD8YEV1ROJ/YQFiYWCirh/n5BQy+01BkTLO7KEe+Q==",
   "success": true,
   "projectFilePath": "F:\\PROGRAMAÇÃO\\Curso Udemy\\Plataforma_VendasASP.Net\\SalesWebMvc\\SalesWebMvc\\SalesWebMvc.csproj",
   "expectedPackageFiles": [
@@ -91,6 +91,7 @@
     "C:\\Users\\aless\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.10\\microsoft.entityframeworkcore.analyzers.6.0.10.nupkg.sha512",
     "C:\\Users\\aless\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.10\\microsoft.entityframeworkcore.design.6.0.10.nupkg.sha512",
     "C:\\Users\\aless\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.10\\microsoft.entityframeworkcore.relational.6.0.10.nupkg.sha512",
+    "C:\\Users\\aless\\.nuget\\packages\\microsoft.entityframeworkcore.relational.design\\1.1.6\\microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512",
     "C:\\Users\\aless\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.10\\microsoft.entityframeworkcore.sqlserver.6.0.10.nupkg.sha512",
     "C:\\Users\\aless\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.10\\microsoft.entityframeworkcore.tools.6.0.10.nupkg.sha512",
     "C:\\Users\\aless\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
