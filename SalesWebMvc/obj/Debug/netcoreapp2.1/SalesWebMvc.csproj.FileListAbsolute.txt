@@ -39,3 +39,4 @@ F:\PROGRAMAÇÃO\Curso Udemy\Plataforma_VendasASP.Net\SalesWebMvc\SalesWebMvc\ob
 F:\PROGRAMAÇÃO\Curso Udemy\Plataforma_VendasASP.Net\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Edit.cshtml.g.cs
 F:\PROGRAMAÇÃO\Curso Udemy\Plataforma_VendasASP.Net\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.cshtml.g.cs
 F:\PROGRAMAÇÃO\Curso Udemy\Plataforma_VendasASP.Net\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.csproj.AssemblyReference.cache
+F:\PROGRAMAÇÃO\Curso Udemy\Plataforma_VendasASP.Net\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Index.cshtml.g.cs
