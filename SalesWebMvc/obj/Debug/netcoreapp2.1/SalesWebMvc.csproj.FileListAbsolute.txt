@@ -42,3 +42,5 @@ F:\PROGRAMAÇÃO\Curso Udemy\Plataforma_VendasASP.Net\SalesWebMvc\SalesWebMvc\ob
 F:\PROGRAMAÇÃO\Curso Udemy\Plataforma_VendasASP.Net\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Create.cshtml.g.cs
 F:\PROGRAMAÇÃO\Curso Udemy\Plataforma_VendasASP.Net\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Delete.cshtml.g.cs
 F:\PROGRAMAÇÃO\Curso Udemy\Plataforma_VendasASP.Net\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Details.cshtml.g.cs
+F:\PROGRAMAÇÃO\Curso Udemy\Plataforma_VendasASP.Net\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.csproj.AssemblyReference.cache
+F:\PROGRAMAÇÃO\Curso Udemy\Plataforma_VendasASP.Net\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Edit.cshtml.g.cs
