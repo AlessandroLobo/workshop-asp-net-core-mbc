@@ -27,7 +27,7 @@ namespace SalesWebMvc.Controllers
             var list = await _sellerService.FindAllAsync();
             return View(list);
         }
-       
+
         public async Task<IActionResult> Create()
         {
             var departments = await _departmentService.FindAllAsync();
@@ -44,7 +44,7 @@ namespace SalesWebMvc.Controllers
             //Faz validação a nível de servidor valida campos vazios
             if (!ModelState.IsValid)
             {
-                var departments= await _departmentService.FindAllAsync();
+                var departments = await _departmentService.FindAllAsync();
                 var viewModel = new SellerFormViewModel { Departments = departments };
                 return View(viewModel);
             }
@@ -70,11 +70,18 @@ namespace SalesWebMvc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
         {
-           await _sellerService.RemoveAsync(id);
-            return RedirectToAction(nameof(Index));
+            try
+            {
+                await _sellerService.RemoveAsync(id);
+                return RedirectToAction(nameof(Index));
+            }
+            catch (IntegrityException e)
+            {
+                return RedirectToAction(nameof(Error), new { message = e.Message });
+            }
         }
 
-        public async  Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
@@ -111,7 +118,7 @@ namespace SalesWebMvc.Controllers
             if (!ModelState.IsValid)
             {
                 var departments = await _departmentService.FindAllAsync();
-                var viewModel = new SellerFormViewModel { Seller = seller, Departments = departments};
+                var viewModel = new SellerFormViewModel { Seller = seller, Departments = departments };
                 return View(viewModel);
             }
             if (id != seller.Id)
@@ -120,7 +127,7 @@ namespace SalesWebMvc.Controllers
             }
             try
             {
-               await _sellerService.UpdateAsync(seller);
+                await _sellerService.UpdateAsync(seller);
                 return RedirectToAction(nameof(Index));
             }
             catch (ApplicationException e)
@@ -129,7 +136,7 @@ namespace SalesWebMvc.Controllers
                     return RedirectToAction(nameof(Error), new { message = e.Message });
                 }
             }
-           
+
         }
 
         public IActionResult Error(string message)
