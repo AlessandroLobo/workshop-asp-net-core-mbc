@@ -17,7 +17,7 @@ namespace SalesWebMvc.Services
             _context = context;
         }
 
-        public async  Task<List<SalesRecord>> FindByDateAsync(DateTime? minDate, DateTime? masDate)
+        public async Task<List<SalesRecord>> FindByDateAsync(DateTime? minDate, DateTime? masDate)
         {
             var result = from obj in _context.SalesRecord select obj;
             if (minDate.HasValue)
@@ -35,6 +35,24 @@ namespace SalesWebMvc.Services
                 .ToListAsync();
         }
 
-      
+        public async Task<List<IGrouping<Department, SalesRecord>>> FindByDateGroupingAsinc(DateTime? minDate, DateTime? masDate)
+        {
+            var result = from obj in _context.SalesRecord select obj;
+            if (minDate.HasValue)
+            {
+                result = result.Where(x => x.Date >= minDate.Value);
+            }
+            if (masDate.HasValue)
+            {
+                result = result.Where(x => x.Date <= masDate.Value);
+            }
+            return await result
+                .Include(x => x.Seller)
+                .Include(x => x.Seller.Department)
+                .OrderByDescending(x => x.Date)
+                .GroupBy(x => x.Seller.Department)
+                .ToListAsync();
+        }
+
     }
 }
